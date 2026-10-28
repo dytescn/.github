@@ -24,6 +24,7 @@
     <nav class="site-nav" aria-label="主导航">
       <a href="#download">下载</a>
       <a href="#features">能力</a>
+      <a href="#piksel">Piksel</a>
       <a href="https://github.com/dytescn/dytes/tree/main/docs">文档</a>
       <a href="https://github.com/dytescn">GitHub</a>
       <a class="nav-cta" href="https://github.com/dytescn/dytes/releases/latest">Releases</a>
@@ -138,6 +139,57 @@
 <span class="prompt">$</span> dytes update --check
 <span class="prompt">$</span> dytes update</code></pre>
           <a class="text-link" href="https://github.com/dytescn/dytes/tree/main/docs">阅读完整文档 →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="piksel" id="piksel">
+      <div class="piksel-panel">
+        <div class="piksel-copy">
+          <p class="eyebrow">Product</p>
+          <h2>从 dytes 到 Piksel</h2>
+          <p>
+            dytes 是包管理器，Piksel 是客户实际打开的设计协作产品。
+            三步完成安装与首次更新。
+          </p>
+          <ol class="steps">
+            <li>
+              <span class="step-index">1</span>
+              <div>
+                <strong>安装 dytes</strong>
+                <p>把包管理器装到本机。</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-index">2</span>
+              <div>
+                <strong>同步 Piksel 清单</strong>
+                <p>下载 Piksel 的 <code>dytes.json</code> 到工作目录。</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-index">3</span>
+              <div>
+                <strong>执行 dytes update</strong>
+                <p>dytes 会下载并安装 Piksel 及其依赖。</p>
+              </div>
+            </li>
+          </ol>
+          <a class="button button-ghost" href="https://github.com/dytescn/Piksel">查看 Piksel</a>
+        </div>
+        <div class="piksel-terminal">
+          <div class="terminal-head">macOS / Linux</div>
+          <pre><code><span class="prompt">$</span> curl -fsSL https://www.dytes.cn/install.sh | sh
+
+<span class="prompt">$</span> mkdir -p piksel &amp;&amp; cd piksel
+<span class="prompt">$</span> curl -fsSL https://raw.githubusercontent.com/dytescn/Piksel/main/dytes.json -o dytes.json
+
+<span class="prompt">$</span> dytes update</code></pre>
+          <div class="terminal-head terminal-head-second">Windows PowerShell</div>
+          <pre><code><span class="prompt">&gt;</span> irm https://www.dytes.cn/install.ps1 | iex
+<span class="prompt">&gt;</span> mkdir piksel; cd piksel
+<span class="prompt">&gt;</span> irm https://raw.githubusercontent.com/dytescn/Piksel/main/dytes.json -OutFile dytes.json
+<span class="prompt">&gt;</span> dytes update</code></pre>
         </div>
       </div>
     </section>
